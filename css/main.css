@@ -2792,27 +2792,26 @@ body {
   position: absolute;
   top: 34px;
   bottom: -11px;
-  left: 10px;
+  left: 6px;
 }
 @media screen and (min-width: 320px) {
   .guarantee__item::after {
     top: 24px;
     bottom: -15px;
-    left: 7px;
+    left: 8px;
   }
 }
 @media screen and (min-width: 768px) {
   .guarantee__item::after {
     top: 34px;
-    bottom: -11px;
-    left: 10px;
+    left: 7px;
   }
 }
 @media screen and (min-width: 1440px) {
   .guarantee__item::after {
     top: 34px;
     bottom: -11px;
-    left: 10px;
+    left: 5px;
   }
 }
 
