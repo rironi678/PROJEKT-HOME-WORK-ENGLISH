@@ -1,0 +1,275 @@
+
+.block-fire{
+
+    @media screen and (min-width: 320px){
+        display: none;
+    }
+        @media screen and (min-width: 768px){
+            display: none;
+        }
+    
+        @media screen and (min-width: 1440px){
+            display: flex;
+            position: absolute;
+    
+            top: -47px;
+            right: -62.80000000000001px;
+            width: 452.594px;
+            height: 558.868px;
+            fill: var(--icon-color-fire-black);
+            overflow: hidden;
+
+            transition: fill 700ms var(--function-transition);
+
+
+            &:hover,
+            &:focus{
+                fill: var(--accent-color);
+            }
+
+            &--fragment__left{
+                position: absolute;
+                top: 219px;
+                left: 65px;
+                width: 32.545px;
+                height: 45.858px;  
+
+            }
+            &--fragment__right{
+                position: absolute;
+                top: 184px;
+                left: 336.42px;
+                width: 32.545px;
+                height: 45.858px;  
+            }
+        }
+}
+
+
+.block-fire-icon{
+    width: 452.594px;
+    height: 620.868px;
+}
+
+.solving-problems{
+    position: relative;
+    background-color: var(--background-color-black);
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    z-index: 1;
+
+    @media screen and (min-width: 320px){
+        height: 545px;
+    }
+
+    @media screen and (min-width: 768px){
+        height: 340px;
+        
+    }
+
+    @media screen and (min-width: 1440px){
+        max-width: 1680px;
+        height: 512px;
+    }
+}
+
+.solving-problems-title{
+    color: var(--title-color-white);
+    text-align: left;
+
+    &--color{
+        color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 320px){
+        width: 280px;
+        height: 155px;
+
+        @include font($fs: 24px, $fw: 800);
+        letter-spacing: 0.72px;
+        padding-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 420px;
+
+        @include font($fs: 24px, $fw: 800);
+        letter-spacing: 0.72px;
+        padding-top: 55px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1440px){
+        width: 805px;
+        height: 270px;
+
+        padding-top: 100px;
+        margin-bottom: 68px;
+        @include font($fs: 46px, $fw: 800);
+        letter-spacing: 1.38px;
+    }
+}
+
+.problems-students{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
+    background-color: var(--background-color);
+
+    @media screen and (min-width: 320px){
+        width: 280px;
+        height: 510px;
+
+        top: 0;
+    }
+
+    
+    @media screen and (min-width: 768px){
+        height: 340px;
+        width: 688px;
+
+        top: 0;
+    }
+
+    @media screen and (min-width: 1440px){
+        width: 1314px;
+        height: 362px;
+        margin-right: 0;
+
+        top: 0;
+    }
+}
+
+.problems-students-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 320px){
+        padding: 20px 27px;
+    }
+
+
+    @media screen and (min-width: 768px){
+        padding: 28px 114px;
+    }
+
+    @media screen and (min-width: 1440px){
+        padding: 67px 113px;
+    }
+}
+
+.problems-students-list__item{
+    text-align: left;
+
+
+    @media screen and (min-width: 320px){
+        width: 226px;
+        height: 69px;
+        margin-bottom: 15px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+
+    }
+
+    @media screen and (min-width: 768px){
+        width: 220px;
+        height: 69px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+
+        &:nth-child(2){
+            margin-right: 0;
+        }
+
+        &:nth-child(4){
+            margin-right: 0;
+        } 
+
+        &:nth-child(5){
+            margin-bottom: 28px;
+        } 
+
+        &:nth-child(6){
+            margin-bottom: 28px;
+            margin-right: 0;
+        } 
+    }
+
+    @media screen and (min-width: 1440px){
+        text-align: left;
+        width: 336px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+
+        &:nth-child(2){
+            margin-right: 40px;
+        } 
+
+        &:nth-child(3){
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+
+        &:nth-child(4){
+            margin-right: 40px;
+        } 
+
+        &:nth-child(5){
+            margin-bottom: 30px;
+            margin-right: 40px;
+        }
+
+        &:nth-child(6){
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+    }
+}
+
+.problems-students-list__title{
+    @include font($fs: 20px, $fw: 700);
+    letter-spacing: 1.6px;
+    line-height: normal;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+
+    
+    @media screen and (min-width: 320px){
+        margin-bottom: 5px;
+        &--text {
+            color: var(--text-color);
+            @include font($fs: 14px, $fw: 700);
+            letter-spacing: 1.12px;
+        }
+    }
+
+        @media screen and (min-width: 768px){
+
+            &--text {
+                color: var(--text-color);
+                @include font($fs: 14px, $fw: 700);
+                letter-spacing: 1.12px;
+            }
+        }
+    
+        @media screen and (min-width: 1440px){
+
+            &--text {
+                color: var(--text-color);
+                @include font($fs: 20px, $fw: 700);
+                letter-spacing: 1.6px;
+            }
+        }
+    }
+

@@ -1,0 +1,216 @@
+
+.benefits{
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    position: relative;
+
+
+    @media screen and (min-width: 320px) {
+        height: 308px;
+
+        }
+
+    @media screen and (min-width: 768px) {
+        height: 295px;
+        }
+    
+        @media screen and (min-width: 1440px){
+            height: 324px;
+        }
+}
+
+.benefits__title{
+
+    @media screen and (min-width: 320px) {
+        text-align: left;
+        position: relative;
+        width: 210px;
+
+        
+        @include font($fs: 20px, $fw: 800);
+        letter-spacing: 0.6px;
+        line-height: normal;
+        top: -494px;
+        left: -52px;
+
+        color: var(--background-color);
+        }
+
+    @media screen and (min-width: 768px) {
+        position: relative;
+        width: 688px;
+        
+        @include font($fs: 26px, $fw: 800);
+        letter-spacing: 0.78px;
+        line-height: normal;
+        top: -184px;
+        left: 125px;
+
+        color: var(--background-color);
+        }
+    
+        @media screen and (min-width: 1440px){
+        display: none;
+        }
+    }
+
+.benefits__block{
+    position: relative;
+
+    margin-right: 0;
+    box-shadow: -5px 8px 26px 0px rgba(0,0,0,.04);
+    background-color: var(--background-color);
+
+    @media screen and (min-width: 320px) {
+        margin-left: auto;
+        margin-right: auto;
+    
+        width: 280px;
+        height: 638px;
+        top: -455px;
+        left: 0;
+        padding: 0;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    
+        width: 688px;
+        height: 363px;
+        top: -158px;
+        left: 0;
+        padding: 0;
+        }
+    
+        @media screen and (min-width: 1440px){
+            margin-left: auto;
+            margin-right: auto;
+        
+        top: -165px;
+        left: 0;
+        width: 1314px;
+        height: 390px;
+        padding: 0;
+        }
+
+}
+
+.benefits-list{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 320px) {
+        text-align: left;
+        align-items: center;
+        gap: 30px;
+        padding: 35px 22px;
+        width: 280px;
+        height: 638px;
+
+        }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 688px;
+        height: 363px;
+        }
+    
+        @media screen and (min-width: 1440px){
+            align-items: flex-start;
+            width: 1314px;
+            height: 390px;
+            padding: 67px 113px;
+            gap: 0;
+        }
+}
+
+.benefits-list__item{
+    display: flex;
+    
+
+    @media screen and (min-width: 768px) {
+        width: 236px;
+        gap: 20px;
+        align-items: stretch;
+        text-align: left;
+        }
+    
+        @media screen and (min-width: 1440px){
+            width: 336px;
+            margin-right: 40px;
+            margin-bottom: 30px;
+        }
+}
+
+.benefits-list__item:nth-child(3){
+    @media screen and (min-width: 768px) {
+        margin: 0;
+        }
+
+        @media screen and (min-width: 1440px){
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+}
+
+.benefits-list__item:nth-child(6){
+    @media screen and (min-width: 768px) {
+        margin: 0;
+        height: 77.2px;
+        }
+
+        @media screen and (min-width: 1440px){
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+}
+
+.benefits-list__title{
+    margin-bottom: 10px;
+    color: var(--accent-color);
+
+    @media screen and (min-width: 320px) {
+        @include font($fs: 14px, $fw: 700);
+        letter-spacing: 1.12px;
+        line-height: normal;
+
+        &--text {
+            text-align: left;
+            color: var(--text-color);
+            @include font($fs: 14px, $fw: 700);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        @include font($fs: 14px, $fw: 700);
+        letter-spacing: 1.12px;
+        line-height: normal;
+
+        &--text {
+            text-align: left;
+            color: var(--text-color);
+            @include font($fs: 14px, $fw: 700);
+        }
+    }
+    
+        @media screen and (min-width: 1440px){
+            @include font($fs: 20px, $fw: 700);
+            letter-spacing: 1.6px;
+            line-height: normal;
+
+        
+            &--text {
+                text-align: left;
+                color: var(--text-color);
+                @include font($fs: 20px, $fw: 700)
+            }
+        }
+}

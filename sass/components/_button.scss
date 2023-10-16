@@ -1,0 +1,320 @@
+.navigation__btn {
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    text-align: center;
+
+    transition: {
+        property: color, background-color, border-color, filter;
+        duration: 250ms;
+        timing-function: var(--function-transition);
+    }
+    &--active,
+    &:focus,
+    &:hover {
+    color: var(--title-color-white);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    filter: var(--drop-shadow-btn);}
+
+    @media screen and (min-width: 320px){
+        display: none;
+    }
+
+    @media screen and (min-width: 768px){
+        display: block;
+        margin-left: 239px;
+        width: 260px;
+        height: 48px;
+        padding: 15px 5px;
+    
+        @include font($fs: 14px, $fw: 700);
+        letter-spacing: 1.96px;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 1440px){
+        display: block;
+        margin-left: 0;
+        width: 335.489px;
+        height: 70px;
+        padding-top: 27px;
+        padding-right: 22.96px;
+        padding-bottom: 26px;
+        padding-left: 23.96px;
+    
+        @include font($fs: 14px, $fw: 700);
+        letter-spacing: 1.96px;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}
+
+.navigation__btn-mob{
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    text-align: center;
+
+    transition: {
+        property: color, background-color, border-color, filter;
+        duration: 250ms;
+        timing-function: var(--function-transition);
+    }
+    &--active,
+    &:focus,
+    &:hover {
+    color: var(--title-color-white);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    filter: var(--drop-shadow-btn);}
+
+    @media screen and (min-width: 320px){
+        position: absolute;
+        top: 261px;
+        left: 8px;
+        
+        width: 260px;
+        height: 48px;
+        padding: 15px 5px;
+    
+        @include font($fs: 14px, $fw: 700);
+        letter-spacing: 1.96px;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+
+    @media screen and (min-width: 1440px){
+        display: none;
+    }
+}
+
+.hero__btn {
+    @include font($fs: 14px, $fw: 700);
+    letter-spacing: 1.96px;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid;
+    color: var(--title-color-white);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+
+    text-align: center;
+    font-family: var(--main-font);
+
+    transition: {
+        property: color, background-color, border-color, transform, filter;
+        duration: 250ms;
+        timing-function: var(--function-transition);
+    }
+    &--active,
+    &:focus,
+    &:hover {
+        transform: scale(1.01);
+        background-color: #fff;
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+        filter: var(--drop-shadow-btn);}
+
+        @media screen and (min-width: 320px){
+            @include font($fs: 12px, $fw: 700);
+            letter-spacing: 0.96px;
+            width: 260px;
+            height: 48px;
+            padding: 14px 0;
+        }
+
+
+        @media screen and (min-width: 768px){
+            @include font($fs: 12px, $fw: 700);
+            letter-spacing: 0.96px;
+            width: 260px;
+            height: 48px;
+            padding: 14px 0;
+        }
+    
+        @media screen and (min-width: 1440px){
+            @include font($fs: 14px, $fw: 700);
+            letter-spacing: 1.96px;
+            line-height: normal;
+            width: 354px;
+            height: 70px;
+            padding-top: 27px;
+            padding-bottom: 26px;
+        }
+}
+
+
+.silder__icon{
+    width: 25px;
+    top: 0;
+    left: 0;
+
+    &:hover,
+    &:focus{
+        fill: #b22201;
+}}
+
+.btn{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 320px){
+        &--right{
+            position: absolute;
+            top: 605px;
+            left: 250px;
+        }
+    
+        &--left{
+            position: absolute;
+            top: 605px;
+            right: 250px;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        &--right{
+            position: absolute;
+            top: 150px;
+            left: 685px;
+        }
+    
+        &--left{
+            position: absolute;
+            top: 150px;
+            right: 685px;
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+    &--right{
+        position: absolute;
+        top: 150px;
+        left: 1150px;
+    }
+
+    &--left{
+        position: absolute;
+        top: 150px;
+        right: 1150px;
+    }
+}
+
+}
+
+.contacts__button{
+    text-transform: uppercase;
+    color: var(--title-color-white);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+
+    text-align: center;
+    padding-top: 27px;
+    padding-right: 70px;
+    padding-bottom: 26px;
+    padding-left: 70px;
+    
+    @media screen and (min-width: 320px){
+        @include font($fs: 12px, $fw: 700);
+        letter-spacing: 0.96px;
+        padding: 24px 0;
+        width: 259px;
+        text-align: center;
+    }
+
+
+    @media screen and (min-width: 768px){
+        @include font($fs: 12px, $fw: 700);
+        letter-spacing: 0.96px;
+        width: 259px;
+        height: 48px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1440px){
+        @include font($fs: 14px, $fw: 700);
+        letter-spacing: 1.96px;
+        line-height: normal;
+        width: 354px;
+        height: 70px;
+    }
+    
+    transition: {
+        property: color, background-color, border-color, transform, filter;
+        duration: 250ms;
+        timing-function: var(--function-transition);
+    }
+    &--active,
+    &:focus,
+    &:hover {
+    transform: scale(1.01);
+    background-color: #fff;
+    color: var(--accent-color);
+    filter: var(--drop-shadow-btn);}
+}
+
+.burger-btn-open{
+
+    width: 21px;
+    height: 12px;
+
+    padding: 0;
+    border: 0;
+
+    cursor: pointer;
+    background-color: transparent;
+
+    @media screen and (min-width: 320px){
+        display: block;
+        margin-left: 0;
+        }
+
+    @media screen and (min-width: 768px){
+        display: block;
+        margin-left: 40px;
+        }
+    
+        @media screen and (min-width: 1440px){
+        display: none;
+    }
+}
+
+
+.burger-btn-close{
+    position: absolute;
+    background-color: transparent;
+    top: 18px;
+    right: 0;
+
+    width: 21px;
+    height: 12px;
+
+    padding: 0;
+    border: 0;
+
+    cursor: pointer;
+    background-color: transparent;
+    
+    @media screen and (min-width: 320px){
+        top: 18px;
+        right: 0;
+    
+    }
+
+    @media screen and (min-width: 768px){
+        top: 18px;
+        right: -5px;
+    
+    }
+
+    @media screen and (min-width: 1440px){
+    display: none;
+}
+}

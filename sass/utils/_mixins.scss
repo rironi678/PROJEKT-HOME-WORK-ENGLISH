@@ -1,0 +1,27 @@
+
+
+@mixin font($fs: 14px, $fw: 400) {
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--set-gap));
+  margin-bottom: calc(-1 * var(--set-gap));
+}
+
+@mixin flex-item($fb: calc(100% / 4 - var(--set-gap))) {
+  flex-basis: $fb;
+  margin-right: var(--set-gap);
+  margin-bottom: 30px
+
+}
+
+@mixin flex-item($fb: calc(100% / 4 - var(--set-gap))) {
+  flex-basis: $fb;
+  margin-right: var(--set-gap);
+  margin-bottom: 30px
+
+}

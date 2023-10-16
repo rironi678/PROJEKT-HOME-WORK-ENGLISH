@@ -1,0 +1,33 @@
+// UTILS
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/vishually-hidden';
+@import './utils/placeholder';
+
+
+// BASE
+@import './base/common';
+@import './base/container';
+
+// COMPONENTS
+@import './components/logo';
+@import './components/title';
+@import "./components/button";
+@import "./components/modal";
+
+
+
+
+// LAYOUT
+@import './layout/hero';
+@import "./layout/header";
+@import "./layout/advantages";
+@import "./layout/solving-problems";
+@import "./layout/learning-benefits";
+@import "./layout/program";
+@import "./layout/benefits";
+@import "./layout/teacher";
+@import "./layout/guarantee";
+@import "./layout/review";
+@import "./layout/contacts";
+@import "./layout/footer";

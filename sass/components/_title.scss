@@ -1,0 +1,7 @@
+.title{
+@mixin font($fs: 14px, $fw: 400, $lh: 24px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: decimal-round($lh/$fs, 2);
+}}
+

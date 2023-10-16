@@ -1,0 +1,321 @@
+
+.program{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    @media screen and (min-width: 320px) {
+        background-color: var(--background-color-black);
+        height: 1636px;
+        padding-top: 50px;
+        padding-bottom: 130px;
+    }
+
+    @media screen and (min-width: 768px) {
+        background-color: var(--background-color-black);
+        height: 1250px;
+        padding-top: 60px;
+        padding-bottom: 130px;
+    }
+
+        @media screen and (min-width: 1440px){
+            background-color: var(--background-color-black);
+            max-width: 1680px;
+            height: 1031px;
+            padding-top: 120px;
+            padding-bottom: 130px;
+        }
+}
+.program__list::after{
+
+    @media screen and (min-width: 320px) {
+        content: "";
+        width: 120px;
+        height: 137px;
+        opacity: 0.5;
+        background-image: url(/images/program/program-bg--tab-x1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        bottom: -110px;
+        right: -39px;
+        }
+
+    @media screen and (min-width: 768px) {
+        content: "";
+        width: 374px;
+        height: 273px;
+        opacity: 0.5;
+        background-image: url(/images/program/program-bg--tab-x1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        bottom: -141px;
+        right: -39px;
+        }
+    
+        @media screen and (min-width: 1440px){
+            content: "";
+            width: 590px;
+            height: 478px;
+            opacity: .5;
+            background-image: url(/images/program/program-bg.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            top: 306px;
+            left: -181px;
+        }
+}
+
+.program__title{
+    color: var(--background-color);
+
+    @media screen and (min-width: 320px) {
+        @include font($fs: 26px, $fw: 800);
+        letter-spacing: 0.78px;
+        margin-bottom: 30px;
+        text-align: center;
+        }
+
+    @media screen and (min-width: 768px) {
+        @include font($fs: 26px, $fw: 800);
+        letter-spacing: 0.78px;
+        margin-bottom: 52px;
+        text-align: left;
+        }
+    
+        @media screen and (min-width: 1440px){
+            @include font($fs: 46px, $fw: 800);
+            letter-spacing: 1.38px;
+            margin-bottom: 106px;
+            text-align: left;
+        }
+
+}
+
+.program__subjekt{
+    color: var(--accent-color);
+    display: inline-flex;
+
+    @media screen and (min-width: 320px) {
+        margin-bottom: 5px;
+        @include font($fs: 12px, $fw: 700);
+        letter-spacing: 0.96px;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 5px;
+        @include font($fs: 12px, $fw: 700);
+        letter-spacing: 0.96px;
+        }
+    
+        @media screen and (min-width: 1440px){
+            margin-bottom: 10px;
+            @include font($fs: 20px, $fw: 700);
+            letter-spacing: 1.6px;
+        }
+}
+
+.program__termin{
+    text-transform: uppercase;
+    color: var(--background-color);
+
+    @media screen and (min-width: 320px) {
+        margin-bottom: 5px;
+        @include font($fs: 14px, $fw: 700);
+        letter-spacing: 1.12px;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 5px;
+        @include font($fs: 14px, $fw: 700);
+        letter-spacing: 1.12px;
+        }
+    
+        @media screen and (min-width: 1440px){
+            margin-bottom: 25px;
+            @include font($fs: 30px, $fw: 700);
+            letter-spacing: 2.4px;
+        }
+}
+
+
+.program__list{
+    margin-left: 0;
+    display: flex;
+    position: relative;
+
+    @media screen and (min-width: 320px) {
+        gap: 40px;
+        padding-left: 100px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+        padding-left: 87px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+        @media screen and (min-width: 1440px){
+            gap: 0px;
+            margin-left: 0;
+            padding-left: 0;
+            display: flex;
+            flex-direction: row;
+        }
+}
+
+.program__list::before{
+    @media screen and (min-width: 320px) {
+        content: "";
+        width: 3px;
+        height: 930px;
+        background-color: var(--background-color);
+        display: inline-block;
+        position: absolute;
+        left: 18px;
+        transform: translate(-50%);
+        }
+
+    @media screen and (min-width: 768px) {
+        content: "";
+        width: 3px;
+        height: 560px;
+        background-color: var(--background-color);
+        display: inline-block;
+        position: absolute;
+        left: 18px;
+        transform: translate(-50%);
+        }
+    
+        @media screen and (min-width: 1440px){
+            content: "";
+            width: 1680px;
+            height: 3px;
+            background-color: var(--background-color);
+            display: inline-block;
+            position: absolute;
+            top: -41px;
+            left: -147px;
+            transform: translateY(-2px);
+        }
+}
+
+.program__type{
+
+
+    @media screen and (min-width: 320px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+    
+        @media screen and (min-width: 1440px){
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+}
+
+
+.program__type-list{
+
+    &--color{
+        color: var(--link-color);
+        opacity: 0.5;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 320px) {
+        width: 150px;
+        margin-right: 50px;
+        margin-bottom: 5px;
+        @include font($fs: 12px, $fw: 500);
+        letter-spacing: 0.96px;
+        }
+    
+
+
+    @media screen and (min-width: 768px) {
+        width: 150px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+        @include font($fs: 12px, $fw: 500);
+        letter-spacing: 0.96px;
+        }
+    
+        @media screen and (min-width: 1440px){
+            width: 226px;
+            margin-right: 40px;
+            margin-bottom: 25px;
+            @include font($fs: 18px, $fw: 500);
+            letter-spacing: 1.44px;
+        }
+}
+
+.program__list-icon{
+    position: relative;
+    fill: var(--accent-color);
+    
+}
+
+.krapochka-position{
+
+    @media screen and (min-width: 320px) {
+        position: relative;
+        }
+
+    @media screen and (min-width: 768px) {
+    position: relative;
+    }
+
+    @media screen and (min-width: 1440px){
+    
+    }
+    
+}
+
+.krapochka{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--accent-color);
+    border-radius: 100%;
+
+    @media screen and (min-width: 320px) {
+        left: -88px;
+        width: 12px;
+        height: 12px;
+        }
+
+    @media screen and (min-width: 768px) {
+        left: -75px;
+        width: 12px;
+        height: 12px;
+        }
+    
+        @media screen and (min-width: 1440px){
+            top: -50px;
+            left: 1px;
+            width: 16.143px;
+            height: 16px;
+        }
+}

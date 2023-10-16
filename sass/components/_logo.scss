@@ -1,0 +1,97 @@
+
+.logo{
+    gap: 4px;
+    align-items: baseline;
+    justify-content:center ;
+    display: inline-flex;
+    cursor: pointer;
+    width: 133px;
+    height: 45px;
+
+
+    @media screen and (min-width: 320px){
+        margin-right: 126px;
+    }
+    
+    
+    @media screen and (min-width: 768px){
+        margin-right: 0;
+    }
+    
+    @media screen and (min-width: 1440px){
+        margin-right: 0;
+    }
+}
+
+.mob-logo{
+    gap: 4px;
+    align-items: baseline;
+    justify-content:center ;
+    display: inline-flex;
+    cursor: pointer;
+    width: 133px;
+    height: 45px;
+
+
+
+
+    @media screen and (min-width: 320px){
+        margin-right: 126px;
+    }
+    
+    @media screen and (min-width: 768px){
+        margin-right: 0;
+    }
+}
+
+.logo-icon-campfire{
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+
+    width: 22px;
+    height: 30px;
+}
+.logo__title{
+    @include font($fs: 26px, $fw: 800);
+    letter-spacing: 1.04px;
+    line-height: normal;
+}
+
+.mob-logo__title{
+    color: #fff;
+    @include font($fs: 26px, $fw: 800);
+    letter-spacing: 1.04px;
+    line-height: normal;
+}
+
+.logo__text{
+    display: block;
+
+    @include font($fs: 8px, $fw: 700);
+    letter-spacing: 1.44px;
+    line-height: normal;
+    
+    font-family: var(---text-color);
+    padding-left: 2px;
+
+    &--color {
+    color: var(--accent-color);
+    }
+}
+
+.mob-logo__text{
+    display: inline;
+    color: var(--accent-color);
+
+    @include font($fs: 8px, $fw: 700);
+    letter-spacing: 1.44px;
+    line-height: normal;
+    
+    font-family: var(---text-color);
+    padding-left: 2px;
+
+    &--color {
+    color: #fff;
+    }
+}
