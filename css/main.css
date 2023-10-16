@@ -1831,7 +1831,7 @@ body {
     display: block;
     position: absolute;
     bottom: -110px;
-    right: -39px;
+    right: -20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2160,7 +2160,7 @@ body {
     font-weight: 800;
     letter-spacing: 0.6px;
     line-height: normal;
-    top: -494px;
+    top: -425px;
     left: -52px;
     color: var(--background-color);
   }
@@ -2196,7 +2196,7 @@ body {
     margin-right: auto;
     width: 280px;
     height: 638px;
-    top: -455px;
+    top: -383px;
     left: 0;
     padding: 0;
   }
